@@ -11,16 +11,16 @@ CSS: Los estilos del sitio se definen en archivos CSS ubicados en el directorio 
 JavaScript: script.js contiene el código JavaScript necesario para la interactividad del sitio, como la funcionalidad del menú de navegación y el botón de regreso al inicio.
 Imágenes y SVG: Las imágenes y los iconos vectoriales (SVG) se almacenan en el directorio ./assets/images/. Esto incluye el logo.svg y el favicon.svg.
 Funcionalidades Clave
-Navegación
-El menú de navegación es interactivo y se adapta a dispositivos móviles. Se puede abrir y cerrar mediante botones específicos, cuyos selectores se definen en script.js.
-
+Navegación: El menú de navegación es interactivo y se adapta a dispositivos móviles. Se puede abrir y cerrar mediante botones específicos.
+javascript
+Copy code
 const navOpenBtn = document.querySelector("[data-menu-open-btn]");
 const navCloseBtn = document.querySelector("[data-menu-close-btn]");
 const navbar = document.querySelector("[data-navbar]");
 const overlay = document.querySelector("[data-overlay]");
-Efecto de Scroll
-El sitio implementa efectos de scroll para mejorar la experiencia del usuario, como cambiar el estilo de la cabecera al desplazarse y mostrar un botón para volver al inicio de la página. Estos efectos se gestionan mediante eventos de scroll en script.js y script.js.
-
+Efecto de Scroll: El sitio implementa efectos de scroll para mejorar la experiencia del usuario, como cambiar el estilo de la cabecera al desplazarse y mostrar un botón para volver al inicio de la página.
+javascript
+Copy code
 window.addEventListener("scroll", function () {
   window.scrollY >= 10 ? header.classList.add("active") : header.classList.remove("active");
 });
